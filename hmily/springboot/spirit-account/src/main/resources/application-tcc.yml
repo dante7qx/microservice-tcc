@@ -1,0 +1,15 @@
+org:
+  dromara:
+    hmily:
+      serializer: kryo
+      recoverDelayTime: 32
+      retryMax: 30
+      scheduledDelay: 32
+      scheduledThreadMax:  10
+      repositorySupport: db
+      started: false
+      hmily-db-config:
+        url: jdbc:mysql://localhost/hmily_tcc?characterEncoding=utf8&useSSL=true
+        username: root
+        password: iamdante
+        driver-class-name: com.mysql.cj.jdbc.Driver
