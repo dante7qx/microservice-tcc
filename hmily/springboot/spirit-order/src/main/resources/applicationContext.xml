@@ -17,9 +17,9 @@
     <aop:aspectj-autoproxy expose-proxy="true"/>
     <bean id="hmilyTransactionBootstrap" class="org.dromara.hmily.core.bootstrap.HmilyTransactionBootstrap">
         <property name="serializer" value="kryo"/>
-        <property name="recoverDelayTime" value="35"/>
-        <property name="retryMax" value="30"/>
-        <property name="scheduledDelay" value="35"/>
+        <property name="recoverDelayTime" value="60"/>
+        <property name="retryMax" value="3"/>
+        <property name="scheduledDelay" value="10"/>
         <property name="scheduledThreadMax" value="4"/>
         <property name="repositorySupport" value="db"/>
         <property name="asyncThreads" value="200"/>
