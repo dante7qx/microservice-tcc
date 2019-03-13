@@ -1,10 +1,13 @@
+DROP DATABASE IF EXISTS tcc_member;
+DROP DATABASE IF EXISTS tcc_storage;
+DROP DATABASE IF EXISTS tcc_order;
+DROP DATABASE IF EXISTS hmily_tcc;
+
 -- --------------------------------
 -- 账户表
 -- --------------------------------
-
 DROP DATABASE IF EXISTS tcc_member;
 CREATE DATABASE tcc_member default charset utf8 COLLATE utf8_general_ci;
-
 use tcc_member;
 SET FOREIGN_KEY_CHECKS=0;
 

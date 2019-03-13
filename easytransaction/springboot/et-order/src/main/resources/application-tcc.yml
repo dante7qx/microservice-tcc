@@ -1,0 +1,21 @@
+easytrans:
+  master:
+    zk:
+      zooKeeperUrl: localhost:2181
+  stringcodec:
+    zk:
+      zooKeeperUrl: ${easytrans.master.zk.zooKeeperUrl}
+  idgen:
+    trxId:
+      zkSnow:
+        zooKeeperUrl: ${easytrans.master.zk.zooKeeperUrl}
+  log:
+    database:
+      logCleanEnabled: true
+      logReservedDays: 14
+      logCleanTime: 00:28:00
+      druid:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/et_order_translog?characterEncoding=UTF-8&useSSL=false
+        username: root
+        password: iamdante
