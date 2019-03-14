@@ -35,6 +35,10 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid-spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
@@ -42,7 +46,6 @@
 		<dependency>
 			<groupId>org.dante.et.springboot</groupId>
 			<artifactId>et-account-api</artifactId>
-			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
 

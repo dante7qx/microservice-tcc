@@ -15,6 +15,10 @@ public interface IOrderService {
 	 * @param amount
 	 * @return
 	 */
-	public OrderDTO createOrder(String userId, String commodityCode, int totalCount, double amount);
+	public OrderDTO createOrder(String userId, String commodityCode, int totalCount, double amount, String orderNo);
+	
+	public OrderDTO confirmCreateOrder(String userId, String commodityCode, int totalCount, double amount, String orderNo);
+	
+	public OrderDTO cancelCreateOrder(String userId, String commodityCode, int totalCount, double amount, String orderNo);
 	
 }

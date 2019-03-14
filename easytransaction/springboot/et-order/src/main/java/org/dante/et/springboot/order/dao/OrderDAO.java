@@ -11,4 +11,6 @@ public interface OrderDAO extends JpaRepository<OrderPO, Long> {
 	@Query("update OrderPO set status = ?2 where id = ?1")
 	public void updateOrderStatus(Long id, String status);
 	
+	public OrderPO findByOrderNo(String orderNo);
+	
 }

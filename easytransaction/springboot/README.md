@@ -187,4 +187,17 @@
           password: iamdante
   ```
 
-  
+
+#### 3. 注意
+
+- 调用transaction.startTransaction或者transaction.execute时，要求Spring管控的事务要开启。
+
+```java
+@Transactional
+public void pay() {
+    transaction.startTransaction(busCode, trxId);	// 可选
+        
+    transaction.execute(...);
+}
+```
+

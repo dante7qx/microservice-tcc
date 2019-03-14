@@ -1,0 +1,28 @@
+server:
+  port: 8804
+spring:
+  application:
+    name: pay-service
+  profiles:
+    include: tcc
+  datasource:
+    url: jdbc:mysql://localhost/et_pay?characterEncoding=utf8&useSSL=true
+    username: root
+    password: iamdante
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      initial-size: 10
+      min-idle: 10
+      max-active: 30
+      max-wait: 60000
+      min-evictable-idle-time-millis: 300000
+      pool-prepared-statements: false
+      max-pool-prepared-statement-per-connection-size: 20
+      validation-query: select 1
+      test-on-borrow: false
+      test-on-return: false
+      test-while-idle: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/   

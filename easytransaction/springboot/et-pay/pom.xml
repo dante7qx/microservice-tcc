@@ -10,9 +10,9 @@
 		<version>1.0.0</version>
 	</parent>
 
-	<artifactId>et-order</artifactId>
-	<name>et-order</name>
-	<description>Easy Transaction Springboot - Order</description>
+	<artifactId>et-pay</artifactId>
+	<name>et-pay</name>
+	<description>Easy Transaction Springboot - Account Buy Pay</description>
 
 	<dependencies>
 		<dependency>
@@ -44,9 +44,12 @@
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
+			<groupId>org.dante.et.springboot</groupId>
+			<artifactId>et-account-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.dante.et.springboot</groupId>
+			<artifactId>et-storage-api</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.dante.et.springboot</groupId>

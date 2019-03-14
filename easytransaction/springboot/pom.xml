@@ -15,9 +15,11 @@
 		<module>et-eureka</module>
 		<module>et-account</module>
 		<module>et-account-api</module>
-		<module>et-storage</module> 
-		<module>et-storage-api</module> 
-		<module>et-order</module> 
+		<module>et-storage</module>
+		<module>et-storage-api</module>
+		<module>et-order</module>
+		<module>et-order-api</module>
+		<module>et-pay</module>
 	</modules>
 
 	<properties>
@@ -64,6 +66,21 @@
 				<groupId>com.alibaba</groupId>
 				<artifactId>druid-spring-boot-starter</artifactId>
 				<version>${druid.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.dante.et.springboot</groupId>
+				<artifactId>et-account-api</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.dante.et.springboot</groupId>
+				<artifactId>et-storage-api</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.dante.et.springboot</groupId>
+				<artifactId>et-order-api</artifactId>
+				<version>${project.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
